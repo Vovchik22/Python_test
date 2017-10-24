@@ -14,7 +14,9 @@ if people < dogs:
 if people < dogs:
     print("The world is drooled on!")
 
-dogs += 5
+print("Set dogs quantity: ", end =' ')
+dogs += int(input())
+
 
 if people >= dogs:
     print("People are greater than or equal to dogs")
@@ -24,3 +26,6 @@ if people <= dogs :
 
 if people == dogs:
     print("People are dogs")
+
+if people != dogs:
+    print("people are not dogs")
