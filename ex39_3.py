@@ -10,7 +10,8 @@ days ={
 days['Sat'] = 'Saturday'
 days['Sun'] = 'Sunday'
 
-print('Here is week : ', days)
+for abbrev, day in list(days.items()):
+    print(f' Here is  {abbrev} :  {day}')
 
 count_days = {
 'Monday': 1,
