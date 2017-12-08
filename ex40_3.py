@@ -15,5 +15,9 @@ happy_bday = song (['Happy birthday to you',
 bulls_on_parade = song (['They rally around that family',
                         'With pockets full of shells'])
 
+bulls_on_parades = song (['AAAAAAAAAAAAAAAA',
+                        'BBBBBBBBBBBBBBBB'])
+
 happy_bday.sing_me_a_song()
 bulls_on_parade.sing_me_a_song()
+bulls_on_parades.sing_me_a_song()
