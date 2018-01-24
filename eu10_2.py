@@ -1,18 +1,22 @@
-'''
-n = 21
+
+"""n = 10
 a = [True] * n
 
-a[0] = a[1] = False
+
 
 for k in range (2, n):
     if a[k]:
         print(k)
         for m in range (int(2*k), n, k ):
             a[m] = False
+
+        print(m)
+
 for k in range(n):
-    print(k, '-','prostoe' if a[k] else 'sostavnoe')
-'''
-number = 1000 + 1
+    print(k, '-','prostoe' if a[k] else 'sostavnoe')"""
+
+
+number = 10
 def mult (number):
     natural = []
     for x in range (1, number):

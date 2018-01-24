@@ -1,5 +1,5 @@
 
-# take a varieble from sys, must type filename.txt
+# take a variable from sys, must type filename.txt
 from sys import argv
 # start script and choose filename
 script, filename = argv

@@ -6,7 +6,7 @@ def factor_function (number):
             factors.append(number // factor)
     return factors
 
-number = 40
+number = 101
 print(factor_function(number))
 
 def prime (number):
