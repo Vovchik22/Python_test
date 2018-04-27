@@ -1,49 +1,34 @@
-from sys import argv # impport from sys module arguements
-script, input_file = argv  # define script and imported file
+from sys import argv
+script, input_file = argv  # pre-start recognise script and file
 
-def print_all (f):   # define function with arg f  than execute function and read file
-    print(f.read())  # read file
+def print_all(f):   # read recognised file
+    print( f.read())
 
-def rewind(f):   # define function that we can see what in the opened file
-    f.seek(0)    #
+def rewind (f): # define position in file in BYTES
+    f.seek(0)
 
-def print_a_line(line_count, f):  # function with args, can
-    print(line_count, f.readline()) # exccute line count from function print_a_line, show line
+def print_a_line(line_count, f):   # define variable number of a line and a second argument defines a line (first as a default)
+    print (line_count, f.readline())
 
-current_file = open(input_file)
+current_file = open(input_file) # with this variable we open current file which recognised at pre-start script
 
-print("lets print the hole file: \n")
+print("Lets print a whole file: \n")
 
-print_all(current_file)
+print_all(current_file) # function opened file and read it
 
+print("Now lets rewind")
 
-print("now lets rewind, kind of like a tape")
-
-rewind(current_file)
+rewind(current_file)   # fuction recognised position
 
 print("lets print three lines")
 
-current_line = 1
-print_a_line (current_line, current_file)
+current_line = 1  # variable set number 1
+print_a_line(current_line, current_file) # function for each further line we add line in opened file
+
+current_line = current_line + 1 # add a number to a line
+print_a_line(current_line, current_file)
 
 current_line = current_line + 1
-print_a_line (current_line, current_file)
+print_a_line(current_line, current_file)
 
-current_line = current_line + 1
-print_a_line (current_line, current_file)
-
-'''
-# Open a file
-fo = open("foo.txt", "r+")
-print ("Name of the file: ", fo.name)
-
-line = fo.readlines()
-print ("Read Line: %s" % (line))
-
-# Again set the pointer to the beginning
-fo.seek(0, 0)
-line = fo.readline()
-print ("Read Line: %s" % (line))
-
-# Close opened file
-'''
+current_file.close() # close current file after all proceduders

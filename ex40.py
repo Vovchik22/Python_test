@@ -1,5 +1,7 @@
+mystuff = {'apple': 'i am apples'}
+
 
 def apple():
-    print("A am apples")
+    print("I am apples")
 
 tangerine = 'living reflection of a dream'

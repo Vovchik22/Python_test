@@ -1,7 +1,7 @@
 class mystuff(object):
 
-    def _init_(self):
+    def __init__(self):
         self.tangerine = "And now a thousand years between"
 
     def apple(self):
-        print("I am classy apples")    
+        print("I am classy apples")

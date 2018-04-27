@@ -1,15 +1,13 @@
-i = 10
-numbers  =[11, 12, 16]
+i = 0
+numbers = []
 
-while i < 20:
-    print(f"At he top i is {i}")
+while i <= 6:
+    print ( f'At the top i is {i}')
     numbers.append(i)
 
     i = i + 1
-    print("Numbers now: ", numbers)
-    print(f"At the bootom i is {i}")
-
-print("The numbers:  ")
+    print ("Numbers now:  ", numbers)
+    print (f'At the bottom i is {i} ')
 
 for num in numbers:
     print(num)

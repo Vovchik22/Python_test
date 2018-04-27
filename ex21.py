@@ -1,31 +1,30 @@
-
-def add(a,b):
-    print(f"adding {a} + {b}")
+def add (a, b):
+    print(f"Add {a} + {b}")
     return a + b
 
-def substract(a,b):
-    print(f"subsracting {a} - {b}")
+def sub (a, b):
+    print(f"sub {a} - {b}")
     return a - b
 
-def multiply(a,b):
-    print(f"multiplying {a} * {b}")
+def mult (a, b):
+    print(f"mult {a} * {b}")
     return a * b
 
-def divide(a,b):
-    print(f"divide {a} / {b}")
+def div (a, b):
+    print(f"Add {a} / {b}")
     return a / b
 
-print ("lets do some math with just functions")
+print('Lets do some math')
 
-age = add(30, 5)
-height = substract(78, 4)
-weight = multiply(90,2)
-iq = divide(100,2)
+age = add(30,40)
+height = sub(180,50)
+weight = mult(30,20)
+iq = div(200,100)
 
-print(f"age: {age}, height: {height}, weight: {weight}, IQ: {iq}")
+print(f"age: {age}, height: {height}, weight: {weight}, iq: {iq}")
 
-print("here is a puzzle")
+print("Here ia a puzzle")
 
-what  = add(age,(substract(height, multiply(weight, divide(iq,age)))))
+what = (add(age, sub(height, mult(weight, div(iq, age )))))
 
-print("result:", what)
+print("what: ",what)

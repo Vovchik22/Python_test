@@ -2,32 +2,39 @@ from sys import argv
 
 script, filename = argv
 
-print(f"Were going to erase {filename}.")
-print("If you dont want that, hit CTRL_C (^C).")
-print("If you do want that hit RETURN")
+print(f"We are going to erase {filename}")
+print("If you dont want that, hit CTRL-C")
+print("Else, hit RETURN")
 
-input("?")
+input("?  ")
 
-print("Opening the file...")
+print ("Opening file")
+
 target = open(filename, 'w')
 
-print("Truncating the file. Good bye!")
+
+print ("truncatting the file")
 target.truncate()
 
-print("Now im going to ask you for three lines.")
 
-line1 = input("line1: ")
-line2 = input("line2: ")
-line3 = input("line3: ")
+print ("Now I`m to ask you for the three lines")
 
-print("im going to write these to the file.")
+line1 = input ("line 1:  ")
+line2 = input ("line 2:  ")
+line3 = input ("line 3:  ")
 
-target.write (line1)
+print("Now Im going to wtite these lines")
+
+target.write(line1)
 target.write("\n")
-target.write (line2)
+target.write(line2)
 target.write("\n")
-target.write (line3)
+target.write(line3)
 target.write("\n")
-
-print("and finaly, we close it.")
+print("Do not forget to close the file")
 target.close()
+
+print("read amendment file")
+
+readfile = open(filename, 'r')
+print(readfile.read())

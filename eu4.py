@@ -22,11 +22,12 @@ def palindrome (l):
 for i in l:
     print (palindrome(i))
 """
-
+# определяем фунцию палиндрома
 def is_palindrome (n):
     return str(n) == str(n)[::-1]
 
-if __name__ == "__main__":
+
+if __name__ == "__main__": # определяем точку входа в функцию
     print ('{} and {} => {}'.format(*max((i, j, i*j)
                 for i in range (1000, 900, -1)
                         for j in range (1000, 900,  -1)

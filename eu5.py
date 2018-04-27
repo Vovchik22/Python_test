@@ -1,3 +1,4 @@
+#https://www.youtube.com/watch?v=Km36RkQToqo
 # tell if a number is divisible by 1 to 20
 def Div (number):
     for i in range (2, 21):
@@ -11,7 +12,7 @@ number = 20
 while True:
     if Div(number):
         break
-    number +=20    # increment number
+    number += 20   # increment number
 
 # if we found the number, stop
 
